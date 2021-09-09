@@ -1,0 +1,9 @@
+# Just sample rules
+# Beware with SID value may clash with your current suricata rules
+
+# Suricata IDS MODE
+alert icmp any any -> 8.8.8.8 any (msg:"ICMP Detected to 8.8.8.8"; sid:123456; rev:1; )
+alert icmp any any -> 1.1.1.1 any (msg:"ICMP Detected to 1.1.1.1"; sid:123457; rev:1; )
+
+# Suricata IPS MODE
+#drop icmp any any -> 1.1.1.1 any (msg:"ICMP Detected and Blocked to 1.1.1.1"; sid:123458; rev:1; )
