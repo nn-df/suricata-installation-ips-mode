@@ -13,6 +13,7 @@
 git clone https://github.com/nn-df/suricata-installation-ips-mode.git
 cd suricata-installation-ips-mode
 cp custom.rules /etc/suricata/rules *depends on suricata rules installation folder
+*edit suricata.yml to include custom.rules
 sudo systemctl restart suricata
 ```
 ### Test suricata in IDS mode
